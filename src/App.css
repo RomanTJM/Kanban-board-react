@@ -1,0 +1,421 @@
+@font-face {
+	src: url("../src/Fonts/Roboto/Roboto-Regular.ttf");
+	font-family: "Roboto";
+}
+
+.app {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: #0079bf;
+}
+
+.header {
+	background: #0067a3;
+	padding-left: 22px;
+	display: flex;
+	justify-content: space-between;
+	height: 55px;
+	margin-bottom: 8px;
+}
+
+.detail-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	line-height: 15px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.dropdown {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+	position: absolute;
+	width: 134px;
+	height: 60px;
+	background: #ffffff;
+	border-radius: 5px;
+	top: 80px;
+	right: 17px;
+}
+
+.dropdown::before {
+	content: "";
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	left: 90px;
+	top: -5.5px;
+	background: #ffffff;
+	transform: rotate(45deg);
+}
+
+.none {
+	display: none;
+}
+
+.dropdown-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 22px;
+}
+
+.avatar {
+	margin-right: 7px;
+}
+
+.dropdown-menu {
+	color: #000000;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dropdown-item {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.dropdown-link {
+	color: #000000;
+	text-decoration: none;
+}
+
+.dropdown-link:hover {
+	color: #0067a3;
+	text-decoration: underline;
+}
+
+.main {
+	background-color: #0079bf;
+	display: flex;
+	flex-grow: 1;
+	margin: 0 auto;
+}
+
+.board {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.task-list {
+	background-color: #ebecf0;
+	width: 282px;
+	border-radius: 5px;
+	padding: 12px;
+	margin: 12px;
+	height: fit-content;
+}
+
+.task-list-title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	margin: 0 auto;
+}
+
+.listItem {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.item-title {
+	background-color: #ffffff;
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 7px 8px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.item-title:hover {
+	background-color: #bbddf5;
+}
+
+.title-link {
+	text-decoration: none;
+}
+
+.button {
+	border: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 17px;
+	width: 102px;
+	height: 29px;
+	text-align: center;
+}
+
+.button-add {
+	color: #5e6c84;
+}
+
+.button-add:hover {
+	background-color: #ffffff;
+	box-shadow: 2px 2px 15px rgba(122, 122, 122, 0.5);
+}
+
+.button:disabled {
+	background-color: #ebecf0;
+	box-shadow: none;
+	cursor: default;
+}
+
+.plus-icon {
+	padding-right: 3px;
+}
+
+.button-submit {
+	background-color: #0079bf;
+	color: #ffffff;
+}
+
+.button-submit:hover {
+	box-shadow: 2px 2px 15px rgba(122, 122, 122, 0.5);
+	background-color: #0067a3;
+}
+
+.input,
+.select,
+.textarea {
+	height: 35px;
+	border: none;
+	background: #ffffff;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.input {
+	width: 96.46%;
+	padding-left: 8px;
+}
+
+.textarea {
+	resize: none;
+	width: 96.46%;
+	height: 70px;
+	padding-left: 8px;
+	padding-top: 7px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+}
+
+.edit {
+	display: flex;
+	flex-direction: column;
+}
+
+.edit-text {
+	resize: none;
+	width: 100%;
+	padding-left: 8px;
+	padding-top: 7px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+	height: 15vh;
+}
+
+.select {
+	width: 100%;
+	cursor: pointer;
+}
+
+.input:focus,
+.textarea:focus {
+	border: 2px solid #0067a3;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden.visible {
+	display: flex;
+}
+
+.detail {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border-radius: 5px;
+	padding: 25px;
+	width: 85vw;
+	max-width: 1200px;
+	margin: 20px 20px;
+}
+
+.home-link {
+	display: block;
+	align-self: flex-end;
+	margin: 0;
+	text-decoration: none;
+	color: #737373;
+}
+
+.detail-title {
+	margin: 0;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.task-not-found {
+	color: #0067a3;
+}
+
+.created {
+	color: #737373;
+}
+
+.empty-state {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000000;
+}
+
+.error{
+	font-family: Roboto;
+	font-style: italic;
+	color: red;
+}
+
+.footer {
+	background: #0067a3;
+	padding: 17px 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-item {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-right: 36px;
+}
+
+.footer-right {
+	display: flex;
+}
+
+.active-tasks {
+	margin-right: 36px;
+}
+
+@media screen and (max-width: 480px) {
+	.header-title,
+	.footer {
+		display: none;
+	}
+
+	.header {
+		background: #0079bf;
+		justify-content: flex-end;
+	}
+
+	.dropdown-button {
+		padding: 10px 10px;
+	}
+
+	.dropdown {
+		top: 65px;
+		right: 11px;
+		box-shadow: 2px 2px 15px rgba(122, 122, 122, 0.5);
+	}
+
+	.board {
+		justify-content: center;
+	}
+
+	.task-list {
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.detail {
+		width: 75vw;
+	}
+
+	.button-add:hover,
+	.button-submit:hover {
+		box-shadow: none;
+	}
+
+	.edit-text {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.detail {
+		width: 70vw;
+	}
+}
